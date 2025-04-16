@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Image Gallery</h1>
+  <div class="gallery">
+    <img src="images/image1.jpeg" alt="Image 1" class="thumb" />
+    <img src="images/image2.jpeg" alt="Image 2" class="thumb" />
+    <img src="images/image3.jpeg" alt="Image 3" class="thumb" />
+    <img src="images/image4.jpeg"Image 4" class="thumb" />
+    <!-- Add more images as needed -->
+  </div>
+
+  <div id="lightbox" class="lightbox hidden">
+    <span class="close">&times;</span>
+    <img id="largeImg" src="" alt="Large View" />
+    <button id="prevBtn">&#8592; Prev</button>
+    <button id="nextBtn">Next &#8594;</button>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
