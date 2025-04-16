@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="music-player">
+    <img src="images/human.jpg" alt="Album Art" id="album-art">
+    <h2 id="song-title">Lover</h2>
+    <h3 id="artist">Taylor Swift</h3>
+
+    <audio id="audio" src="song1.mp3"></audio>
+    
+    <div class="controls">
+      <button id="prev">⏮️</button>
+      <button id="play">▶️</button>
+      <button id="next">⏭️</button>
+    </div>
+
+    <input type="range" id="progress" value="0" step="1" min="0" max="100">
+    
+    <div id="playlist">
+      <ul>
+        <li class="playlist-item" data-index="0">Lover</li>
+        <li class="playlist-item" data-index="1">Paris in Rain</li>
+        <li class="playlist-item" data-index="2">Never Not</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
